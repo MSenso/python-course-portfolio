@@ -18,7 +18,7 @@ class JobsTestCase(TestCase):
         Job.objects.create(
             image="Job №1 image path",
             description="Some job description",
-            detailed_description="Some job description" * 100
+            detailed_description="Some job description" * 100,
         )
 
     def test_job_messages_creation(self) -> None:
